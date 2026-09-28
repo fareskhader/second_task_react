@@ -29,12 +29,12 @@ export default function Products() {
   return (
     <section className="products">
       <h2>all products </h2>
-      {products.map((post) => {
+      {products.map((product) => {
         return (
           <div className="post">
-            <h2>{post.title}</h2>
-            <span>{post.description}</span>
-                        <h4>{post.price}</h4>
+            <h2>product name : {product.title}</h2>
+            <span>product description : {product.description}</span>
+                        <h4>product price : {product.price}</h4>
 
           </div>
         );
